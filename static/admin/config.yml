@@ -45,3 +45,56 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+
+  - name: "recipe"
+    label: "Rezept"
+    folder: "site/content/recipe"
+    create: true
+    fields:
+      - name: "name"
+        label: "Name"
+        widget: string
+      - name: "title" 
+        label: "Title"
+        widget: string
+      - name: image
+        label: Image
+        widget: image
+      - name: description
+        label: Description
+        widget: string
+      - name: difficulty
+        label: Difficulty
+        widget: select
+        options:
+          - {label: Leicht, value: 1}
+          - {label: Mittel, value: 2}
+          - {label: Schwer, value: 3}
+      - name: steps
+        label: Steps
+        widget: list
+        fields: 
+          - name: images
+            label: images
+            widget: string
+          - name: description
+            label: Description
+            widget: string
+      - name: ingredients
+        label: Ingredients
+        widget: list
+        fields:
+          - name: ingredient
+            label: Ingredient
+            widget: string
+          - name: quantity
+            label: Quantity
+            widget: string
+          - name: unit
+            label: Unit
+            widget: select
+            options:
+              - {label: (ohne), value: 0}
+              - {label: EL, value: EL}
+              - {label: g, value: g}
+              - {label: ml, value: ml}
