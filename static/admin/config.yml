@@ -51,6 +51,8 @@ collections:
     folder: "site/content/recipe"
     create: true
     fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "recipe-detail-page"}
+      - {label: "Path", name: "path", widget: "hidden", default: "/recipes"}
       - name: "name"
         label: "Name"
         widget: string
