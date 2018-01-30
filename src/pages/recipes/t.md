@@ -1,4 +1,6 @@
 ---
+templateKey: recipe-detail-page
+path: t
 name: t
 title: t
 image: /img/chemex.jpg

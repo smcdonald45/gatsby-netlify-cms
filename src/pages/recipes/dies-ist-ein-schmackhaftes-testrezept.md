@@ -1,4 +1,6 @@
 ---
+templateKey: recipe-detail-page
+path: dies-ist-ein-schmackaftes-testrezept
 name: Testrezept
 title: Dies ist ein "schmackhaftes" Testrezept
 image: /img/gb_local_horst.png
