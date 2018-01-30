@@ -48,7 +48,7 @@ collections:
 
   - name: "recipe"
     label: "Rezept"
-    folder: "src/pages/blog"
+    folder: "src/pages/recipes"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "recipe-detail-page"}
