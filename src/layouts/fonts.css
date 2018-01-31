@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'UnitRoundedOT';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/UnitRoundedOT.woff") format("woff"), url("./fonts/UnitRoundedOT.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'UnitRoundedOT-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/UnitRoundedOT-Light.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'UnitRoundedOT-Medi';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/UnitRoundedOT-Medi.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Rewe_Pop-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Rewe_Pop-Regular.woff") format("woff"), url("./fonts/Rewe_Pop-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'Rewe_Pop-Regular_tt';
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Rewe_Pop-Regular.woff") format("woff"), url("./fonts/Rewe_Pop-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'Rewe_Pop-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/Rewe_POP-Bold.woff") format("woff")
+}
