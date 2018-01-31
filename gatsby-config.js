@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/rezepte-hd'
+  pathPrefix: '/rezepte-hd',
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
