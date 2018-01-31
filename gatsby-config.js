@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '//pedantic-bell-18b06d.netlify.com',
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
