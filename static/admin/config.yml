@@ -65,6 +65,8 @@ collections:
       - name: description
         label: Description
         widget: string
+      - { name: "preparationTime", label: "Zubereitungszeit", widget: "string"}
+      - { name: "totalTime", label: "Gesamtzeit", widget: "string"}
       - name: difficulty
         label: Difficulty
         widget: select
