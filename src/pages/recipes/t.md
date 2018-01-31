@@ -6,7 +6,7 @@ title: t
 image: /img/chemex.jpg
 description: t
 difficulty: '2'
-preparationTime: '10 min',
+preparationTime: '10 min'
 totalTime: '10 min'
 steps:
   - description: g
