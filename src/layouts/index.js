@@ -7,9 +7,7 @@ import './all.sass';
 import './fonts.css'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
-    <div>{children()}</div>
-  </div>
+  <div>{children()}</div>
 );
 
 TemplateWrapper.propTypes = {
