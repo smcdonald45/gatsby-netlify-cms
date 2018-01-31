@@ -29,6 +29,7 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "netlify": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --single-quote --write src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
