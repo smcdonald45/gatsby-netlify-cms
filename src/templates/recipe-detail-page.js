@@ -5,7 +5,7 @@ import withPrefix from 'gatsby-link';
 import './rewe.css';
 import whatsAppImage from './images/WhatsApp.svg';
 import fullScreenImage from './images/fullscreen.svg';
-import expertImage from './images/ernaehrungsexpertin.jpg'
+import expertImage from './images/ernaehrungsexpertin.jpg';
 
 const DIFFICULTY_MAPPER = {
   1: 'Leicht',
@@ -31,7 +31,7 @@ const RecipeHeader = ({ title, image }) => (
   </div>
 );
 
-const renderTotalTime = (totalTime) => {
+const RenderTotalTime = ({ totalTime }) => {
   if (totalTime) {
     return (
       <div className="font-style-body-2 font-weight-bold info-item-label w-100-p">
@@ -42,7 +42,7 @@ const renderTotalTime = (totalTime) => {
   return null;
 };
 
-const renderPreparationTime = (preparationTime) => {
+const RenderPreparationTime = ({ preparationTime }) => {
   if (preparationTime) {
     return (
       <div className="font-style-body info-item-label w-100-p">Zubereitung: {preparationTime}</div>
@@ -57,8 +57,8 @@ const RecipeInfo = ({ difficulty, preparationTime, totalTime }) => (
       <div className="row">
         <div className="col-xs-12 col-md-6 col-lg-7 item-wrapper d-flex justify-content-between flex-nowrap align-items-center recipe-info-summary">
           <div className="info-item info-item-time d-flex flex-column flex-wrap text-left">
-            {renderTotalTime(totalTime)}
-            {renderPreparationTime(preparationTime)}
+            <RenderTotalTime totalTime={totalTime} />
+            <RenderPreparationTime preparationTime={preparationTime} />
           </div>
 
           <div className="info-item d-flex hidden-print">
@@ -92,8 +92,8 @@ const RecipeDetailPortions = () => (
     <hr className="visible-print" />
 
     <div className="widget hidden-print">
-      <a className="btn plus " />
-      <a className="btn minus" />
+      <button className="btn plus">+</button>
+      <button className="btn minus">-</button>
       <div className="text font-style-body">
         <span className="amount">
           <input type="text" className="font-style-body" name="portions" value="4" maxLength="2" />
