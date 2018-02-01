@@ -1,6 +1,6 @@
 import React from 'react';
 import graphql from 'graphql';
-import withPrefix from 'gatsby-link';
+import { withPrefix } from 'gatsby-link';
 
 import './rewe.css';
 import whatsAppImage from './images/WhatsApp.svg';
@@ -15,7 +15,7 @@ const DIFFICULTY_MAPPER = {
 
 const RecipeHeader = ({ title, image }) => (
   <div className="rdk-header recipe-detail-header has-gradient">
-    <img className="picture cover hidden-print" src={image} alt="" />
+    <img className="picture cover hidden-print" src={withPrefix(image)} alt="" />
 
     <div className="recipe-title-container">
       <div className="container">
