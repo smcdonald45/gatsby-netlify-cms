@@ -1,6 +1,6 @@
 import React from 'react';
 import graphql from 'graphql';
-import withPrefix from 'gatsby-link';
+import { withPrefix } from 'gatsby-link';
 
 import './rewe.css';
 import whatsAppImage from './images/WhatsApp.svg';
@@ -78,7 +78,7 @@ const RecipeDetailPortions = () => (
       <a href="#" className="btn btn-color hidden-print read-mode-button">
         <span className="label-mobile">Zubereitung</span>
         <span className="label-desktop">Kochansicht</span>
-        <img src={fullScreenImage} />
+        <img src={withPrefix(fullScreenImage)} />
       </a>
     </div>
     <h2
@@ -224,7 +224,7 @@ const RecipeDetail = ({ steps, ingredients }) => (
                     </div>
                   </li>
                 ))}
-              </ol>
+              </ol>expertImage
             </div>
             <div
               className="expert-tipp read-mode-show hidden-print controller "
@@ -233,7 +233,7 @@ const RecipeDetail = ({ steps, ingredients }) => (
               <div className="row">
                 <div className="expert col-xs-12 col-sm-3 col-print-3">
                   <div className="image">
-                    <img src={expertImage} alt="Sophie" />
+                    <img src={withPrefix(expertImage)} alt="Sophie" />
                   </div>
                   <span className="expert-name font-style-body">Sophie</span>
                 </div>
@@ -298,13 +298,13 @@ const RecipeDetail = ({ steps, ingredients }) => (
                 className="recipe-whatsapp visible-xs-block margin-bottom-1 hidden-print"
                 data-title="Cannelloni mit Hackfleisch"
                 data-link="https://www.rewe.de/rezepte/cannelloni-mit-hackfleisch/"
-                data-img={whatsAppImage}
+                data-img={withPrefix(whatsAppImage)}
               >
                 <a
                   className="btn btn-block btn-default"
                   href="whatsapp://send?text=Cannelloni%20mit%20Hackfleisch%0AZutaten%20f%C3%BCr%204%20Personen%0A%0A750%20g%20Hackfleisch%0A2%20EL%20%C3%96l%0AZwiebel%0A2%20Knoblauchzehen%0A600%20g%20passierte%20Tomaten%0ASalz%0APfeffer%0A1%20EL%20Zucker%0A250%20g%20Cannelloni%0A25%20g%20Butter%0A25%20g%20Mehl%0A300%20ml%20Milch%0A70%20g%20Frischk%C3%A4se%0A70%20g%20Parmesan%0Ageriebene%20Muskatnuss%0A0.5%20Bund%20Basilikum%0A%0A%0Ahttps%3A%2F%2Fwww.rewe.de%2Frezepte%2Fcannelloni-mit-hackfleisch%2F"
                 >
-                  <img src={whatsAppImage} alt="icon" />
+                  <img src={withPrefix(whatsAppImage)} alt="icon" />
                   <span className="label">Zutaten per WhatsApp teilen</span>
                 </a>
               </div>
