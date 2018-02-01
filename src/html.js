@@ -34,7 +34,7 @@ module.exports = class HTML extends React.Component {
             <meso-content>
               {this.props.headComponents}
               {css} 
-              {this.props.preBodyComponents}            
+              {this.props.preBodyComponents}         
                 <div
                   key={`body`}
                   id="___gatsby"

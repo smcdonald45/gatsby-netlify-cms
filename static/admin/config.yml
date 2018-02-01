@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/img
-public_folder: /img
+media_folder: static/images/content
+public_folder: /images/content
 
 collections:
   - name: "blog"
@@ -46,7 +46,7 @@ collections:
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
 
-  - name: "recipe"
+  - name: "recipe"F
     label: "Rezept"
     folder: "src/pages/recipes"
     create: true

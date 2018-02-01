@@ -1,9 +1,9 @@
 ---
 templateKey: recipe-detail-page
-path: dies-ist-ein-schmackaftes-testrezept
+path: dies-ist-ein-schmackhaftes-testrezept
 name: Testrezept
 title: Dies ist ein "schmackhaftes" Testrezept
-image: /img/gb_local_horst.png
+image: /images/content/gb_local_horst.png
 description: 'Mmmh, lecker!'
 difficulty: '1'
 preparationTime: '10 min'
